@@ -40,3 +40,11 @@ const observer = new IntersectionObserver ((entries) => {
 
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el)); 
+
+
+const navbar = document.querySelector('.nav');
+
+menuIcon.onclick = () => {
+    
+    navbar.classList.toggle('active');
+}
